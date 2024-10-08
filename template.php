@@ -1,11 +1,12 @@
 <div class="card-funcionario">
     <header>
-        <h2>Nome: <?= $funcionario["nome"]; ?></h2>
-        <p>Cargo: <?= $funcionario["cargo"]; ?></p>
-        <p>Idade: <?= $funcionario["idade"]; ?></p>
+    <h1>Cadastro de Novo funcionário</h1>
+        <form action="empresa" method="post">
+            <p>Nome: <input type="text" name="nome" required /></p>
+            <p>Salário: <input type="text" name="salario" required /></p>
+            <p>Cargo: <input type="text" name="cargo" required /></p>
+            <p>Idade: <input type="number" name="idade" required /></p>
+            <input type="submit" name="submit" value="Enviar" />
+        </form>
     </header>
-    <footer>
-        <a href="tel:<?= $funcionario["telefone"]; ?>">telefone: <?= $funcionario["telefone"];?></a>
-        <span>ID: <?= $funcionario["id_funcionario"]; ?></span>
-    </footer>
 </div>
